@@ -1,5 +1,12 @@
 package org.misc;
 
+/**
+ * Questions:
+ * 1. Can final int and final Integer be modified? No
+ * 2. Is Integer immutable like String? Yes
+ * 
+ * @author octopusgarden
+ */
 public class JavaFinal {
 
 	public void finalKeywordsTest() {
