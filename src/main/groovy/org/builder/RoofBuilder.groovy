@@ -1,8 +1,8 @@
 package org.builder
 
 class RoofBuilder {
-    private String type
-    private String material
+    private String type = "Hip"
+    private String material = "Clay"
 
     private RoofBuilder() {
     }

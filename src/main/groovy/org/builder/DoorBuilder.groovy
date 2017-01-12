@@ -1,8 +1,8 @@
 package org.builder
 
 class DoorBuilder {
-    private String doorKnobType
-    private String material
+    private String doorKnobType = "Knob"
+    private String material = "Wood"
 
     private DoorBuilder() {
     }
