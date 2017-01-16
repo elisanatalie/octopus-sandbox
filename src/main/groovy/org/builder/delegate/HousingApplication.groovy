@@ -12,7 +12,7 @@ class HousingApplication {
 
         println "Door with door knob type = " + door.doorKnobType
 
-        House house = org.builder.trait.HouseBuilder.builder()
+        House house = HouseBuilder.builder()
 //                .withDoorKnobType("Lever")
 //                .withRoofType("Gable")
                 .build()
