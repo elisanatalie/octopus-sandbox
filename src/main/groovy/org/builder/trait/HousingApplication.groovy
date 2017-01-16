@@ -1,4 +1,4 @@
-package org.builder.delegate
+package org.builder.trait
 
 import org.builder.model.Door
 import org.builder.model.House
@@ -6,13 +6,13 @@ import org.builder.model.House
 class HousingApplication {
 
     static void main(String[] args) {
-        Door door = DoorBuilder.builder()
+        Door door = org.builder.delegate.DoorBuilder.builder()
                 .withDoorKnobType("Lever")
                 .build()
 
         println "Door with door knob type = " + door.doorKnobType
 
-        House house = org.builder.trait.HouseBuilder.builder()
+        House house = HouseBuilder.builder()
 //                .withDoorKnobType("Lever")
 //                .withRoofType("Gable")
                 .build()

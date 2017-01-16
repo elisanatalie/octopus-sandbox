@@ -1,4 +1,4 @@
-package org.builder.delegate
+package org.builder.model
 
 class Roof {
     private String type

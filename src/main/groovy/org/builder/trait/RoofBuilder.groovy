@@ -1,17 +1,12 @@
-package org.builder.delegate
+package org.builder.trait
 
 import org.builder.model.Roof
 
-class RoofBuilder {
+trait RoofBuilder {
+    private Roof roof = new Roof()
     private String type = "Hip"
     private String material = "Clay"
 
-    private RoofBuilder() {
-    }
-
-    static RoofBuilder builder() {
-        new RoofBuilder()
-    }
 
     RoofBuilder withRoofType(final String type) {
         this.type = type
@@ -23,8 +18,7 @@ class RoofBuilder {
         this
     }
 
-    Roof build() {
-        Roof roof = new Roof()
+    Roof buildRoof() {
         roof.setType(type)
         roof.setMaterial(material)
         roof

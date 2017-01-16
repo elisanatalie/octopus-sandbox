@@ -1,17 +1,12 @@
-package org.builder.delegate
+package org.builder.trait
 
 import org.builder.model.Door
 
-class DoorBuilder {
+trait DoorBuilder {
+    private Door door = new Door()
     private String doorKnobType = "Knob"
     private String material = "Wood"
 
-    private DoorBuilder() {
-    }
-
-    static DoorBuilder builder() {
-        new DoorBuilder()
-    }
 
     DoorBuilder withDoorKnobType(String doorKnobType) {
         this.doorKnobType = doorKnobType
@@ -23,8 +18,7 @@ class DoorBuilder {
         this
     }
 
-    Door build() {
-        Door door = new Door()
+    Door buildDoor() {
         door.setDoorKnobType(doorKnobType)
         door.setMaterial(material)
         door

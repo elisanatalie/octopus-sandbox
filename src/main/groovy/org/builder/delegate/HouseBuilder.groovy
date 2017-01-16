@@ -1,5 +1,7 @@
 package org.builder.delegate
 
+import org.builder.model.House
+
 class HouseBuilder {
     @Delegate
     private DoorBuilder doorBuilder = DoorBuilder.builder()
