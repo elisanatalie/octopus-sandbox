@@ -1,7 +1,10 @@
-package org.builder
+package org.builder.delegate
 
 class HouseBuilder {
+    @Delegate
     private DoorBuilder doorBuilder = DoorBuilder.builder()
+
+    @Delegate
     private RoofBuilder roofBuilder = RoofBuilder.builder()
 
     private HouseBuilder() {
@@ -12,15 +15,6 @@ class HouseBuilder {
         new HouseBuilder()
     }
 
-    HouseBuilder withDoorKnobType(String doorKnobType) {
-        doorBuilder.withDoorKnobType(doorKnobType)
-        this
-    }
-
-    HouseBuilder withRoofType(String roofType) {
-        roofBuilder.withRoofType(roofType)
-        this
-    }
 
     House build() {
         House house = new House()

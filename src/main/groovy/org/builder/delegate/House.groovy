@@ -1,4 +1,4 @@
-package org.builder
+package org.builder.delegate
 
 class House {
     private Door door
