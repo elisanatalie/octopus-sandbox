@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/octopus-sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/octopus-sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/octopus-sandbox_main.iml" filepath="$PROJECT_DIR$/.idea/modules/octopus-sandbox_main.iml" group="octopus-sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/octopus-sandbox_test.iml" filepath="$PROJECT_DIR$/.idea/modules/octopus-sandbox_test.iml" group="octopus-sandbox" />
+    </modules>
+  </component>
+</project>
