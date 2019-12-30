@@ -1,23 +1,22 @@
 package org.kata;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class OrderTest {
     @Test
     public void test1() {
-        assertThat(Order.order("is2 Thi1s T4est 3a"), equalTo("Thi1s is2 3a T4est"));
+        assertEquals(Order.order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
     }
 
     @Test
     public void test2() {
-        assertThat(Order.order("4of Fo1r pe6ople g3ood th5e the2"), equalTo("Fo1r the2 g3ood 4of th5e pe6ople"));
+        assertEquals(Order.order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
     }
 
     @Test
     public void test3() {
-        assertThat("Empty input should return empty string", Order.order(""), equalTo(""));
+        assertEquals(Order.order(""), "", "Empty input should return empty string");
     }
 }

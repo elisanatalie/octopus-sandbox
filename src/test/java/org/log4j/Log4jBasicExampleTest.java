@@ -1,6 +1,6 @@
 package org.log4j;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class Log4jBasicExampleTest {
 
