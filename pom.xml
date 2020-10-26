@@ -9,7 +9,7 @@
     <properties>
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <log4j-api.version>2.1</log4j-api.version>
+        <log4j-api.version>2.13.3</log4j-api.version>
         <groovy-all.version>2.4.7</groovy-all.version>
     </properties>
 
